@@ -30,8 +30,11 @@ public class PlayerController : MonoBehaviour {
 		fixedVelocity.x *= 0.75f;
 		rb2d.velocity = fixedVelocity;
 
+
+
 		float h = Input.GetAxis("Horizontal");
 		rb2d.AddForce(Vector2.right * speed * h);
+
 
 		float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
 		rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
