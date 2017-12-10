@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//ESTE CODIGO ES PARA MOVERSE HACIA LOS LADOS
 public class PlayerController : MonoBehaviour {
 
 	public float maxSpeed = 10f;

@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pushable
+  - Avioneta
+  - Obstaculo
+  - Bala
+  - VidaPerro
+  - VidaCuyo
+  - ObjetoPadre
+  - JefeDinosaurio
+  - Pelota
   layers:
   - Default
   - TransparentFX
@@ -41,4 +49,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fondo
+    uniqueID: 4197190183
+    locked: 0
+  - name: Escenario
+    uniqueID: 2374826377
+    locked: 0
+  - name: Personaje
+    uniqueID: 623385621
+    locked: 0
+  - name: Obstaculos
+    uniqueID: 3810391063
     locked: 0
