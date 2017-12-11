@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 //Nuestro GameController está aquí
 public class Player : MonoBehaviour {
     public static Player instance;
@@ -20,10 +21,11 @@ public class Player : MonoBehaviour {
         if (vidas == 0){
             Destroy(gameObject);
             GameController.instance.AvionDie();
+            Invoke("RegresarMenu", 3);
         }
     }
     public void OnTriggerEnter2D(Collider2D collider){
-        if (collider.CompareTag("Obstaculo")){
+        if (collider.CompareTag("Obstaculo") || collider.CompareTag("ObstaculosJefe")){
             colliderAvioneta.enabled = false;
             anim.SetTrigger("Choco");
             vidas--;
@@ -35,5 +37,10 @@ public class Player : MonoBehaviour {
     private void Inmune(){
         anim.SetTrigger("Choco");
         colliderAvioneta.enabled = true;
+    }
+
+    private void RegresarMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour {
     public static GameController instance;
     public GameObject gameOverText;
+    public GameObject NivelCompletadoText;
     public bool gameOver;
     private int score = 0;
     public Text scoreText;
@@ -45,6 +46,10 @@ public class GameController : MonoBehaviour {
     {
         gameOverText.SetActive(true);
         gameOver = true;
+    }
 
+    public void NivelCompletado()
+    {
+        NivelCompletadoText.SetActive(true);
     }
 }

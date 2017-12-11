@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class JefesRespawning : MonoBehaviour {
-    public GameObject Dinosaurio; 
+    public GameObject Dinosaurio;
+    public int tiempoRespawn=80;
 	// Use this for initialization
 	void Start () {
-        Invoke("RespawnDinosaurio", 80);//80
+        Invoke("RespawnDinosaurio", tiempoRespawn);//80
     }
 	
 	// Update is called once per frame

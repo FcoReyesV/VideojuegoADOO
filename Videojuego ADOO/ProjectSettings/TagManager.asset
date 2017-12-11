@@ -13,6 +13,7 @@ TagManager:
   - ObjetoPadre
   - JefeDinosaurio
   - Pelota
+  - ObstaculosJefe
   layers:
   - Default
   - TransparentFX
@@ -56,9 +57,9 @@ TagManager:
   - name: Escenario
     uniqueID: 2374826377
     locked: 0
-  - name: Personaje
-    uniqueID: 623385621
-    locked: 0
   - name: Obstaculos
     uniqueID: 3810391063
+    locked: 0
+  - name: Personaje
+    uniqueID: 623385621
     locked: 0

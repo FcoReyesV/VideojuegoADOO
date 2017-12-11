@@ -11,12 +11,12 @@ public class BalaDisparo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (transform.position.x > 9.3)
+        if (transform.position.x > 9.3 || transform.position.x <- 10.06)
             Destroy(gameObject);
 	}
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Obstaculo") || collider.CompareTag("JefeDinosaurio"))
+        if (collider.CompareTag("Obstaculo") || collider.CompareTag("JefeDinosaurio") || collider.CompareTag("ObstaculosJefe"))
         {
             Destroy(gameObject);
         }

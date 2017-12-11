@@ -15,7 +15,7 @@ public class PelotaDestruida : MonoBehaviour {
         if (collider.CompareTag("Bala"))
             balasMax++;
 
-        if (balasMax == 10)
+        if (balasMax == 6)
         {
             anim.SetTrigger("PelotaDestruida");
             Invoke("DestruirPelota", 1);
